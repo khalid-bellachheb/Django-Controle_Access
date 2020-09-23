@@ -13,3 +13,6 @@
 - models : db
 
 - templates : frontend
+
+- static files : [frontend] images, css, javascript 
+- media files : [user] images, vedio 
