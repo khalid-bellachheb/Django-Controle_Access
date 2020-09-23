@@ -25,7 +25,8 @@ class data_ttn(models.Model):
     Autorisation=models.CharField(max_length=50,choices=AUTORISATION_TYPE)
     Porte=models.CharField(max_length=2,choices=Porte_TYPE)
     Zone=models.CharField(max_length=10,choices=Zone_TYPE)
+    
 
 
     def __str__(self):
-        return  (str(self.id)+'__'+ self.badge)
+        return  ("badge N : "+ str(self.id))
