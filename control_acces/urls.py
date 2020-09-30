@@ -1,6 +1,7 @@
 from django.urls import include, path
+
 from . import views
 
 urlpatterns = [
-    path('', views.Data_ListView.as_view(), name='data_ttn'),
+    path('',views.FoliumView.as_view(), name='control_acces' ),
 ]

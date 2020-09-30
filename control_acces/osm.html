@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea3fee1680744141aa459faabdf44370 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ea3fee1680744141aa459faabdf44370" ></div>
+        
+</body>
+<script>    
+    
+            var map_ea3fee1680744141aa459faabdf44370 = L.map(
+                "map_ea3fee1680744141aa459faabdf44370",
+                {
+                    center: [48.3577, -4.5659],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b041926a5174e78b9b3d73b41d1f416 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ea3fee1680744141aa459faabdf44370);
+        
+    
+            var marker_e8554e4504824ff89d93ac15b2ff5a79 = L.marker(
+                [48.3885, -4.4841],
+                {}
+            ).addTo(map_ea3fee1680744141aa459faabdf44370);
+        
+    
+            var icon_a6f11c1cdb3446ebb6c50f45d7309f86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8554e4504824ff89d93ac15b2ff5a79.setIcon(icon_a6f11c1cdb3446ebb6c50f45d7309f86);
+        
+    
+        var popup_5d413dcce52849a2aff3ee4f00f412d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_049e866e4a49471a8a9532fa2e2506b9 = $(`<div id="html_049e866e4a49471a8a9532fa2e2506b9" style="width: 100.0%; height: 100.0%;"><b>Brest</b><br>(48.3885, -4.4841)</div>`)[0];
+            popup_5d413dcce52849a2aff3ee4f00f412d4.setContent(html_049e866e4a49471a8a9532fa2e2506b9);
+        
+
+        marker_e8554e4504824ff89d93ac15b2ff5a79.bindPopup(popup_5d413dcce52849a2aff3ee4f00f412d4)
+        ;
+
+        
+    
+    
+            marker_e8554e4504824ff89d93ac15b2ff5a79.bindTooltip(
+                `<div>
+                     Brest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c71104e8096e4fb18deecd2609b4fd30 = L.marker(
+                [48.1089, -1.6782],
+                {}
+            ).addTo(map_ea3fee1680744141aa459faabdf44370);
+        
+    
+            var icon_da229ea31a2e44d5a22970888f502a69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c71104e8096e4fb18deecd2609b4fd30.setIcon(icon_da229ea31a2e44d5a22970888f502a69);
+        
+    
+        var popup_4bb5a70de2ab4e2cb270e296fd56a1c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ef93208bada4f79b69b132af637c342 = $(`<div id="html_5ef93208bada4f79b69b132af637c342" style="width: 100.0%; height: 100.0%;"><b>Rennes</b><br>(48.1089, -1.6782)</div>`)[0];
+            popup_4bb5a70de2ab4e2cb270e296fd56a1c9.setContent(html_5ef93208bada4f79b69b132af637c342);
+        
+
+        marker_c71104e8096e4fb18deecd2609b4fd30.bindPopup(popup_4bb5a70de2ab4e2cb270e296fd56a1c9)
+        ;
+
+        
+    
+    
+            marker_c71104e8096e4fb18deecd2609b4fd30.bindTooltip(
+                `<div>
+                     Rennes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c748855b652845f78353053aaa122fcb = L.marker(
+                [48.855, 2.3542],
+                {}
+            ).addTo(map_ea3fee1680744141aa459faabdf44370);
+        
+    
+            var icon_361985bad9674737afba0592cc258907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c748855b652845f78353053aaa122fcb.setIcon(icon_361985bad9674737afba0592cc258907);
+        
+    
+        var popup_efd793bed4b7488ea0cf1d354bc9e24d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c715d0be19e34a66a67d51ca259cfc13 = $(`<div id="html_c715d0be19e34a66a67d51ca259cfc13" style="width: 100.0%; height: 100.0%;"><b>Paris</b><br>(48.855, 2.3542)</div>`)[0];
+            popup_efd793bed4b7488ea0cf1d354bc9e24d.setContent(html_c715d0be19e34a66a67d51ca259cfc13);
+        
+
+        marker_c748855b652845f78353053aaa122fcb.bindPopup(popup_efd793bed4b7488ea0cf1d354bc9e24d)
+        ;
+
+        
+    
+    
+            marker_c748855b652845f78353053aaa122fcb.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45b03f0735f240e592df53e1cfdffa6c = L.marker(
+                [49.4874, 8.4643],
+                {}
+            ).addTo(map_ea3fee1680744141aa459faabdf44370);
+        
+    
+            var icon_df3e1936da3c46bf99a39adcabab0262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45b03f0735f240e592df53e1cfdffa6c.setIcon(icon_df3e1936da3c46bf99a39adcabab0262);
+        
+    
+        var popup_5a65abbd55404df080421bc6ceeda720 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea1b75fad59f465c9e6cd2eddaf913e7 = $(`<div id="html_ea1b75fad59f465c9e6cd2eddaf913e7" style="width: 100.0%; height: 100.0%;"><b>Mannheim</b><br>(49.4874, 8.4643)</div>`)[0];
+            popup_5a65abbd55404df080421bc6ceeda720.setContent(html_ea1b75fad59f465c9e6cd2eddaf913e7);
+        
+
+        marker_45b03f0735f240e592df53e1cfdffa6c.bindPopup(popup_5a65abbd55404df080421bc6ceeda720)
+        ;
+
+        
+    
+    
+            marker_45b03f0735f240e592df53e1cfdffa6c.bindTooltip(
+                `<div>
+                     Mannheim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+  {{control_acces.header.render|safe}} 
+  {{control_acces.html.render|safe}}  
+  <script>
+  {{control_acces.script.render|safe}}  
+  </script>
+</body>
+</html>
