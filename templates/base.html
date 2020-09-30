@@ -6,7 +6,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="{% static 'img/fav.png' %}" sizes="16x16">
+		<link rel="shortcut icon" href="{% static 'img/fav.ico' %}" sizes="16x16">
 		<!-- Author Meta -->
 		<meta name="author" content="codepixer">
 		<!-- Meta Description -->
@@ -16,7 +16,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Contrôle d'accès Prj20</title>
+		<title>Contrôle d'accès</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -59,8 +59,8 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="{% url 'accueil' %}" >Home</a></li>
-				          <li><a href="{% url 'control_acces'%}">TTN DATA Map</a></li>
+				          <li class="menu-active"><a href="{% url 'accueil' %}" >Accueil</a></li>
+				          <li><a href="{% url 'control_acces'%}">Points de contrôles</a></li>
 				          <li><a href="{% url 'data_ttn' %}">DATA FROM TTN</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
@@ -84,7 +84,7 @@
 							<div class="single-footer-widget">
 								<h6>About Us</h6>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+									École Nationale d'Ingénieurs de Brest
 								</p>
 								<p class="footer-text">
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -92,43 +92,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 								</p>								
 							</div>
-						</div>
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-											</div>
-
-										<div class="info"></div>
-									</form>
-								</div>
-							</div>
-						</div>						
-						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-							<div class="single-footer-widget">
-								<h6>Follow Us</h6>
-								<p>Let us be social</p>
-								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-behance"></i></a>
-								</div>
-							</div>
-						</div>							
+						</div>												
 					</div>
 				</div>
 			</footer>	
 			<!-- End footer Area -->	
 
 			<script src="{% static 'js/vendor/jquery-2.2.4.min.js '%}"></script>
-			<! -- <script src="{% static 'js/vendor/bootstrap.min.js '%}"></script>			 -->
+			<script src="{% static 'js/vendor/bootstrap.min.js '%}"></script>			
   			<script src="{% static 'js/easing.min.js '%}"></script>			
 			<script src="{% static 'js/hoverIntent.js '%}"></script>
 			<script src="{% static 'js/superfish.min.js '%}"></script>	

@@ -1,129 +1,52 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block body %}
-			<!-- Start cat Area -->
-			<section class="cat-area section-gap" id="feature">
-				<div class="container">							
-					<div class="row">
-						<div class="col-lg-4">	
-							<div class="single-cat d-flex flex-column">
-								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-magic-wand"></span></span></a>
-								<h4 class="mb-20" style="margin-top: 23px;">Maintenance</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
-								</p>
-							</div>															
-						</div>
-						<div class="col-lg-4">	
-							<div class="single-cat">
-								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-rocket"></span></span></a>
-								<h4 class="mt-40 mb-20">Residental Service</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
-								</p>
-							</div>															
-						</div>
-						<div class="col-lg-4">
-							<div class="single-cat">
-								<a href="#" class="hb-sm-margin mx-auto d-block"><span class="hb hb-sm inv hb-facebook-inv"><span class="lnr lnr-bug"></span></span></a>
-								<h4 class="mt-40 mb-20">Commercial Service</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why.
-								</p>
-							</div>							
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End cat Area -->		
-			
-					
-			<!-- Start service Area -->
-			<section class="service-area section-gap" id="service">
+						
+			<!-- Start blog-posts Area -->
+			<section class="blog-posts-area section-gap">
 				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-12 pb-30 header-text text-center">
-							<h1 class="mb-10">Our Capturing Market Sectors</h1>
-							<p>
-								Who are in extremely love with eco friendly system..
-							</p>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-service">
-								<div class="thumb">
-									<img src="img/s1.jpg" alt="">									
-								</div>
-								<h4>Automotive Engineering</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-service">
-								<div class="thumb">
-									<img src="img/s2.jpg" alt="">									
-								</div>
-								<h4>Construction & Engineering</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-service">
-								<div class="thumb">
-									<img src="img/s3.jpg" alt="">									
-								</div>
-								<h4>Industrial Engineering</h4>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-								</p>
-							</div>
-						</div>												
-					</div>
-				</div>	
-			</section>
-			<!-- End service Area -->
-			
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-8 post-list blog-post-list">
+							<div class="single-post">
+								<img class="img-fluid" src="{% static 'img/p1.jpg' %}" alt="">
+								<a href="#">
+									<h1>
+										Contrôle d’accès
+                                        du Centre Spatial Guyannais
+									</h1>
+								</a>
+								<div class="content-wrap">
+									<p>
+										Le Centre Spatial Guyannais a été créé en 1965, cogéré par l’ESA et le CNES, il vient de féter son 100ème lancement de la fusée Ariane V. Il dispose de 3 sites de lancement répartis sur un territoire de 21km² (zone ariane V et centre de contrôle).
+									</p>
 
-			<!-- Start project Area -->
-			<section class="project-area section-gap" id="project">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-8 pb-30 header-text text-center">
-							<h1 class="mb-10">Latest Finished Projects</h1>
-							<p>
-								Who are in extremely love with eco friendly system..
-							</p>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-8 col-md-8">
-							<a href="img/p1.jpg" class="img-gal">
-								<img class="img-fluid single-project" src="img/p1.jpg" alt="">
-							</a>	
-						</div>
-						<div class="col-lg-4 col-md-4">
-							<a href="img/p2.jpg" class="img-gal">
-								<img class="img-fluid single-project" src="img/p2.jpg" alt="">
-							</a>	
-						</div>						
-						<div class="col-lg-6 col-md-6">
-							<a href="img/p3.jpg" class="img-gal">
-								<img class="img-fluid single-project" src="img/p3.jpg" alt="">
-							</a>	
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<a href="img/p4.jpg" class="img-gal">
-								<img class="img-fluid single-project" src="img/p4.jpg" alt="">
-							</a>	
-						</div>		
+									<p>
+										Le centre technique est le point d’entrée principal du site, il regroupe le centre d’étude et de lancement, les bureaux administratif, le centre de maintenance et les bâtiments d’assemblage des satellites. On se propose de mettre en œuvre des solutions de contrôles d’accès du centre technique.
+									</p>
+
+									<blockquote class="generic-blockquote">
+										CAHIER DES CHARGES :<br /> Le centre technique se compose de trois parties distinctes avec des niveaux de contrôles différents :<br />
+										- Zone 1 : espace réservé pour l’accueil du public avec entrée du musée de l’espace.<br />
+										- Zone 2 : espace pour le personnel et les visiteurs invités, l’accès est contrôlé.<br />
+										- Zone 3 : espace d’assemblage des satellites ( salles blanches), accès réservés à certains personnels.
+									</blockquote>
+									
+									<p>
+										MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
+									</p>
+
+									<p>
+										MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed MCSE training.
+									</p>									
+
+
+								</div>
+								
+               
 					</div>
 				</div>	
 			</section>
-			<!-- End project Area -->			
+			<!-- End blog-posts Area -->		
 
 {% endblock body %}
