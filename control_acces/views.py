@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 import folium
 from folium import plugins
+from folium.features import DivIcon
 
 from django.views.generic import TemplateView
 # Create your views here.
@@ -20,7 +21,7 @@ class FoliumView(TemplateView):
         'Brest' : (48.3885,-4.4841),
         "Paris": (48.8550,2.3542),
         "Rabat":(34.0169,-6.8019)}
-
+        # les points de polygon
         locations = [[5.22252,-52.77741],
                  [5.22287,-52.78058],
                  [5.22431,-52.78165],
@@ -32,6 +33,7 @@ class FoliumView(TemplateView):
                  [5.22358,-52.77628],
                  [5.22252,-52.77741]
                  ]
+        # les points des ports
         ports={
         'E' : [5.22766,-52.77771],
         "D": [5.22640,-52.77815],
@@ -39,7 +41,11 @@ class FoliumView(TemplateView):
         'B':[5.2238,-52.7767],
         'A':[5.2230,-52.7779]
         }
-
+        # les points des zones
+        Zones={
+        'Zone 1' : [5.22446,-52.77619],
+        'Zone 2':[5.22494,-52.78015],
+        "Zone 3": [5.22716,-52.77746]}
         # Créer un object figure
         figure = folium.Figure()
         # Posionner la carte sur Guyane
@@ -67,13 +73,24 @@ class FoliumView(TemplateView):
         folium.plugins.LocateControl().add_to(m)
         # Trace un rectangle
         #folium.vector_layers.Rectangle
-        folium.vector_layers.Polygon(locations=locations, tooltip='Centre Spatial Guyannais').add_to(m)
-        #
+        folium.vector_layers.Polygon(locations=locations, tooltip='Centre Spatial Guyannais' ).add_to(m)
+
+        # affichage des cercles et des markeur
         for  port_name, port in ports.items():
             folium.vector_layers.Circle(location=port,radius=30, tooltip=port_name,color='#ff3333').add_to(m)
             folium.Marker(port, popup=f'<b>{port}</b><br>Port {port_name}',
             tooltip=port_name,
-            icon=folium.Icon(color="orange",icon="wrench", prefix='fa')
+            icon=folium.Icon(color="orange",icon="wrench", prefix='fa'),
+             html='<div style="font-size: 24pt">%s</div>' % 'text'
+            ).add_to(m)
+        # labels
+        for zone_name,zone_coords in Zones.items():
+            folium.map.Marker(zone_coords, 
+            icon=DivIcon(
+                icon_size=(120,36),
+                icon_anchor=(0,0),
+                html='<div style="font-size: 14pt">%s</div>' % zone_name,
+                )
             ).add_to(m)
         # "user-times" and "user-o" , "wrench"
         figure.render()

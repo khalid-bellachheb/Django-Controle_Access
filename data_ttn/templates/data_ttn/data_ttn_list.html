@@ -1,5 +1,90 @@
-<h1> DATA TTN</h1>
+{% extends 'base.html' %}
 
-{% for object in object_list %}
-{{object}}
-{% endfor%}
+{% block body %}
+			<!-- Start project Area -->
+                <section class="project-area section-gap" id="project">
+                    <div class="container">
+                        <div class="row justify-content-md-start">
+                            <div class="col-md-10 pb-30 header-text text-left">
+                                <h1 class="mb-2">Données d’identification des utilisateurs</h1>
+                                </br>
+                                <div class="container">
+                                    <h2>Visiteurs</h2>         
+                                    </br>
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Badge</th>
+                                            <th>Autorisation</th>
+                                            <th>Porte</th>
+                                            <th>Zone</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1230</td>
+                                            <td>Accés autorisé</td>
+                                            <td>Porte A</td>
+                                            <td>Zone 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2354</td>
+                                            <td>Accés non autorisé</td>
+                                            <td>Porte B</td>
+                                            <td>Zone 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4856</td>
+                                            <td>Accés autorisé</td>
+                                            <td>Porte C</td>
+                                            <td>Zone 3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </br>
+                                <div class="container">
+                                    <h2>Employés</h2>         
+                                    </br>
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Badge</th>
+                                            <th>Autorisation</th>
+                                            <th>Porte</th>
+                                            <th>Zone</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1234</td>
+                                            <td>Accés autorisé</td>
+                                            <td>Porte A</td>
+                                            <td>Zone 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2554</td>
+                                            <td>Accés autorisé</td>
+                                            <td>Porte B</td>
+                                            <td>Zone 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4856</td>
+                                            <td>Accés autorisé</td>
+                                            <td>Porte C</td>
+                                            <td>Zone 3</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                            </div>
+                        </div>
+                        						
+            <!--
+            {% for object in object_list %}
+            {{object}}
+            {% endfor%}
+            -->
+			
+			<!-- End project Area -->
+{% endblock body %}
