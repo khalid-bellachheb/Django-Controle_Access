@@ -1,11 +1,18 @@
 from django.shortcuts import render
-
+# Open street map module
 import folium
 from folium import plugins
 from folium.features import DivIcon
-
+# TTN API
+import requests
+import json
+import pandas as pd
+#
 from django.views.generic import TemplateView
 # Create your views here.
+
+from data_ttn.models import data_ttn
+
 '''
 def Control_acces(request):
     context={}
@@ -14,6 +21,9 @@ def Control_acces(request):
 
 class FoliumView(TemplateView):
     template_name = "control_acces/control_acces.html"
+
+    obj=data_ttn(badge="1",Autorisation="Autorisé",Porte="A", Zone="1")
+    obj.save()
 
     def get_context_data(self, **kwargs):
         # définir les villes dans la carte
@@ -95,3 +105,15 @@ class FoliumView(TemplateView):
         # "user-times" and "user-o" , "wrench"
         figure.render()
         return {"control_acces": figure}
+
+        def TTN_API(self):
+            headers = {
+                    'Accept': 'application/json',
+                    'Authorization': 'key ttn-account-v2.QgWpB8kKKfhXnndMVKweVz2YKlu3hu-vTU_00-zNRmE',
+                }
+
+            response = requests.get('https://pre2020.data.thethingsnetwork.org/api/v2/query', headers=headers)
+            ## Read the responses into a Pandas Dataframe
+            res=response.json()
+            ## Raw DataFrame from TTN Swagger API
+            df = pd.DataFrame.from_dict(res)

@@ -1,3 +1,4 @@
+"""
 import requests
 import json
 
@@ -28,3 +29,12 @@ print(response.status_code)
 print(data)
 # chellaoui.zakaria@gmail.com
 # Azerty1997
+'''
+var badge=(bytes[0]<<8) | bytes[1];
+var authorisation=(bytes[2]<<8);
+var porte=(bytes[3]<<8);
+var zone=(bytes[4]<<8);'''
+
+"""
+
+print('44')

@@ -10,5 +10,3 @@ from .models import data_ttn
 
 class Data_ListView(ListView):
     model = data_ttn
-
-

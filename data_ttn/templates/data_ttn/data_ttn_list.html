@@ -27,18 +27,6 @@
                                             <td>Porte A</td>
                                             <td>Zone 1</td>
                                         </tr>
-                                        <tr>
-                                            <td>2354</td>
-                                            <td>Accés non autorisé</td>
-                                            <td>Porte B</td>
-                                            <td>Zone 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4856</td>
-                                            <td>Accés autorisé</td>
-                                            <td>Porte C</td>
-                                            <td>Zone 3</td>
-                                        </tr>
                                         </tbody>
                                     </table>
                                     </div>
@@ -56,24 +44,16 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1234</td>
-                                            <td>Accés autorisé</td>
-                                            <td>Porte A</td>
-                                            <td>Zone 1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2554</td>
-                                            <td>Accés autorisé</td>
-                                            <td>Porte B</td>
-                                            <td>Zone 2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4856</td>
-                                            <td>Accés autorisé</td>
-                                            <td>Porte C</td>
-                                            <td>Zone 3</td>
-                                        </tr>
+                                            {% for data_ttn in object_list  %}
+                                                {% if data_ttn.Autorisation == "Accés autorisé" %}
+                                                    <tr>
+                                                        <td>{{data_ttn.badge}}</td>
+                                                        <td>{{data_ttn.Autorisation}}</td>
+                                                        <td>{{data_ttn.Porte}}</td>
+                                                        <td>{{data_ttn.Zone}}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
                                         </tbody>
                                     </table>
                                     </div>
