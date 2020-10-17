@@ -21,12 +21,16 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>1230</td>
-                                            <td>Accés autorisé</td>
-                                            <td>Porte A</td>
-                                            <td>Zone 1</td>
-                                        </tr>
+                                            {% for data_ttn in object_list  %}
+                                                {% if data_ttn.Autorisation != "Accés autorisé" %}
+                                                    <tr>
+                                                        <td>{{data_ttn.badge}}</td>
+                                                        <td>{{data_ttn.Autorisation}}</td>
+                                                        <td>{{data_ttn.Porte}}</td>
+                                                        <td>{{data_ttn.Zone}}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
                                         </tbody>
                                     </table>
                                     </div>

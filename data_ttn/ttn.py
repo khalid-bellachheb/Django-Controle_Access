@@ -1,40 +1,27 @@
-"""
 import requests
 import json
 
-endpoint = 'http://eu.thethings.network:8084/applications/pre2020/devices'
-accessKey = 'ttn-account-v2.QgWpB8kKKfhXnndMVKweVz2YKlu3hu-vTU_00-zNRmE'
-key = f'Key {accessKey}'
-
-params = {"lorawan_device": {
-           "dev_id": "stm32", 
-           "dev_eui": "343137325E367E0D", 
-           "app_key": "0670530270E403D0FA0BC00708F06F07", 
-           "app_eui": "70B3D57ED0034E36",
-           "app_id": "pre2020", 
-           "dev_addr": "260164BD",
-           "activation_constraints": "local", 
-           "uses32_bit_f_cnt": True}, 
-         "app_id": "pre2020", 
-         "dev_id": "stm32"}
-        
-     
-params_json = json.dumps(params)
-print(params_json)
-response = requests.get(endpoint,headers={'Authorization': key}, params = params_json)
-
-data = response.json()
-
-print(response.status_code)
-print(data)
-# chellaoui.zakaria@gmail.com
-# Azerty1997
 '''
-var badge=(bytes[0]<<8) | bytes[1];
-var authorisation=(bytes[2]<<8);
-var porte=(bytes[3]<<8);
-var zone=(bytes[4]<<8);'''
+https://curl.trillworks.com/
+'''
 
-"""
+headers = {
+    'Accept': 'application/json',
+    'Authorization': 'key ttn-account-v2.QgWpB8kKKfhXnndMVKweVz2YKlu3hu-vTU_00-zNRmE',
+}
 
-print('44')
+params = (
+    ('last', '1m'),
+)
+
+response = requests.get('https://pre2020.data.thethingsnetwork.org/api/v2/query/stm32', headers=headers, params=params)
+
+if(str(response)=="<Response [200]>"):
+  ## Read the responses into a Pandas Dataframe
+  res=response.json()
+  for x in res :
+    obj=data_ttn(device_id=x["device_id"],badge=x["badge"],Autorisation=x["authorisation"],Porte=x["porte"], Zone=x["zone"])
+    obj.save()
+  print('ok')
+else :
+  print("not ok")

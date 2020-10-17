@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'data_ttn',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
