@@ -1,0 +1,407 @@
+    1  l
+    2  ls
+    3  history
+    4  exit
+    5  cls
+    6  clear
+    7  cd /var/www/
+    8  ls
+    9  cd venv/
+   10  source bin/activate
+   11  pip list
+   12  pip install django
+   13  pip list
+   14  python -v
+   15  cd src/
+   16  ls
+   17  django-admin.py startproject prj .
+   18  ls
+   19  cd prj
+   20  ls
+   21  cd ..
+   22  python manage.py migrate
+   23  cd ..
+   24  mkdir static-root && mkdir media-root
+   25  ls
+   26  cd venv/src/prj/wsgi.py 
+   27  history
+   28  nano /etc/apache2/sites-available/000-default.conf
+   29  history
+   30  adduser $user www-data
+   31  adduser $USER www-data
+   32  chown www-data:www-data /var/www/venv/src
+   33  chown www-data:www-data /var/www/venv/src/db.sqlite3
+   34  chmod -R 775 /var/www/venv/
+   35  clear
+   36  ls
+   37  cd venv/
+   38  ls
+   39  cd src/
+   40  ls -al
+   41  nano prj/settings.py 
+   42  nano /etc/apache2/sites-available/000-default.conf
+   43  nano prj/settings.py 
+   44  clear
+   45  history
+   46  ls /
+   47  cd /var/www/
+   48  ls
+   49  cd venv
+   50  ls
+   51  source bin/activate
+   52  ls
+   53  cd ..
+   54  ls
+   55  cd venv/
+   56  cd src/
+   57  ls
+   58  nano prj/settings.py 
+   59  clear
+   60  ls
+   61  ls
+   62  cd ..
+   63  ls
+   64  cd ..
+   65  ls
+   66  cd 
+   67  cd /var/www/venv
+   68  cd ..
+   69  cd 
+   70  cd media-root/
+   71  nano prj/settings.py 
+   72  cd ..
+   73  ls
+   74  cd venv
+   75  ls
+   76  cd src/
+   77  ls
+   78  nano prj/settings.py 
+   79  service apache2 restart
+   80  ping 127.0.0.17
+   81  nano prj/settings.py 
+   82  clear
+   83  history
+   84  nano /etc/apache2/sites-available/000-default.conf
+   85  service apache2 restart
+   86  clear
+   87  ping 127.0.0.17
+   88  ping 127.0.0.14
+   89  ls
+   90  cd pr
+   91  cd prj/
+   92  ls
+   93  cat wsgi.py 
+   94  ls
+   95  cd ..
+   96  ls
+   97  $python manage.py runserver
+   98  $python3 manage.py runserver
+   99  python manage.py runserver
+  100  exit
+  101  history
+  102  nano /etc/apache2/sites-available/000-default.conf
+  103  nano prj/settings.py
+  104  cd /var/www/
+  105  ls
+  106  cd venv
+  107  ls
+  108  cd src
+  109  ls
+  110  nano prj/settings.py
+  111  service apache2 restart
+  112  apt-get install git-all
+  113  clear
+  114  git version
+  115  dnf
+  116  ls
+  117  cd prj
+  118  ls
+  119  cd ..
+  120  cd .
+  121  cd ..
+  122  ls
+  123  rm -r src
+  124  ls
+  125  mkdir src
+  126  ls
+  127  cd src/
+  128  git clone https://github.com/BellachhebKhalid/Django-Controle_Access
+  129  ls
+  130  cd Django-Controle_Access/
+  131  ls
+  132  mv . ..
+  133  mv . ../
+  134  ls
+  135  cd ..
+  136  ls
+  137  mv Django-Controle_Access/ src
+  138  ls
+  139  mv src ../src
+  140  mv src ../source
+  141  ls
+  142  cd ..
+  143  ls
+  144  cd source
+  145  ls
+  146  cd ..
+  147  ls
+  148  rm -r src
+  149  mv source/ src
+  150  ls
+  151  cd src
+  152  ls
+  153  pip install -r requirements.txt 
+  154  pip3 install -r requirements.txt 
+  155  nano requirements.txt 
+  156  pip3 install -r requirements.txt 
+  157  clear
+  158  pip freeze
+  159  pip3 freeze
+  160  ls
+  161  cd project/
+  162  ls
+  163  nano settings.py 
+  164  history | grep .conf
+  165  nano /etc/apache2/sites-available/000-default.conf
+  166  history | grep apa
+  167  service apache2 restart
+  168  cd ..
+  169  ls
+  170  pip3 install folium
+  171  service apache2 restart
+  172  ls
+  173  nano project/settings.py 
+  174  service apache2 restart
+  175  nano project/settings.py 
+  176  service apache2 restart
+  177  python manage.py collectstatic
+  178  python3 manage.py collectstatic
+  179  nano project/settings.py 
+  180  python3 manage.py collectstatic
+  181  ls
+  182  cd ..
+  183  ls
+  184  cd ..
+  185  cd venv
+  186  ls
+  187  source bin/activate
+  188  ls
+  189  cd src/
+  190  ls
+  191  cd static/
+  192  ls
+  193  cd ..
+  194  ls
+  195  cd project/
+  196  ls
+  197  nano settings.py 
+  198  ls
+  199  cd ..
+  200  ls
+  201  cd static/
+  202  ls
+  203  cd ..
+  204  ls
+  205  nano project/settings.py 
+  206  history | grep colla
+  207  python manage.py collectstatic
+  208  history | resta
+  209  history | grep resta
+  210  service apache2 restart
+  211  exit
+  212  ls
+  213  cd ..
+  214  ls
+  215  source bin/activate
+  216  clear
+  217  ls
+  218  cd src
+  219  ls
+  220  rm -r Frontend-Templete/
+  221  ls
+  222  cat requirements.txt 
+  223  pip3 install mapbox
+  224  service apache2 restart
+  225  pip3 list
+  226  pip3 install folium
+  227  service apache2 restart
+  228  ls
+  229  cd control_acces/
+  230  ls
+  231  cat views.py 
+  232  clear
+  233  nano views.py 
+  234  service apache2 restart
+  235  apt get update
+  236  apt update
+  237  apt install apache2
+  238  vi /etc/apache2/sites-enabled/000-default.conf 
+  239  service apache2 restart
+  240  vim /etc/network/interfaces 
+  241  ip a
+  242  vim /etc/network/interfaces 
+  243  ip a
+  244  vim /etc/network/interfaces 
+  245  reboot
+  246  ip a
+  247  vim /etc/network/interfaces 
+  248  ip a
+  249  apt install ifupdown
+  250  vim /etc/network/interfaces 
+  251  reboot
+  252  ip a
+  253  vim /etc/network/interfaces 
+  254  service network status
+  255  reboot
+  256  ip a
+  257  cat /etc/debian_version 
+  258  history | less
+  259  cat /dev/null > /etc/network/interfaces 
+  260  vim /etc/network/interfaces 
+  261  vim /etc/cloud/cloud.cfg
+  262  vim /etc/cloud/cloud.cfg.d/99-installer.cfg 
+  263  ll /etc/netplan/
+  264  vim /etc/netplan/00-installer-config.yaml 
+  265  netplan apply
+  266  ip a
+  267  ping harpe
+  268  ping ctr
+  269  vim /etc/resolv.conf 
+  270  ping 195.221.233.1
+  271  ping 195.221.233.254
+  272  vim /etc/netplan/00-installer-config.yaml 
+  273  vim /etc/resolv.conf 
+  274  reboot
+  275  ip a
+  276  ping harpe
+  277  echo $http_proxy
+  278  vim /etc/apt/apt.con
+  279  vim /etc/apt/apt.conf.d/80proxy
+  280  echo $http_proxy
+  281  reboot
+  282  ping harpe
+  283  echo $http_proxy
+  284  apt update
+  285  clear
+  286  service apache2 stop
+  287  service apache2 restart
+  288  tail -f /var/log/apache2/other_vhosts.access.log
+  289  cd /var/log/apache2/other_vhosts.acCCCcess.log
+  290  cd /var/log/apache2 
+  291  ls -al
+  292  cat access.log
+  293  ls -al
+  294  cat error.log
+  295  cd /var/www/
+  296  ls
+  297  cd venv/
+  298  ls
+  299  cd src
+  300  ls -al
+  301  cd accueil/
+  302  ls -al
+  303  nano views.py 
+  304  cd ..
+  305  service apache2 restart
+  306  cd /var/log/apache2/
+  307  ls
+  308  cat access.log
+  309  history
+  310  cd /var/www/
+  311  cd venv/
+  312  cd src/accueil/
+  313  ls
+  314  nano views.py 
+  315  cat views.py 
+  316  nano views.py 
+  317  cat views.py 
+  318  nano views.py 
+  319  cat views.py 
+  320  service apache2 restart
+  321  history
+  322  cat /var/log/apache2/
+  323  cat /var/log/apache2/error.log
+  324  cat /var/log/apache2/access.log
+  325  nano views.py 
+  326  service apache2 restart
+  327  cat /var/log/apache2/error.log
+  328  cd ..
+  329  ls
+  330  python manage.py startapp api
+  331  python3 manage.py startapp api
+  332  ls -al
+  333  cd project/
+  334  nano settings.py 
+  335  cd ..
+  336  cd api/
+  337  ls -al
+  338  nano views.py 
+  339  cd ..
+  340  ls
+  341  cd project/
+  342  nano urls.py 
+  343  cd api
+  344  ls -al
+  345  cd ..
+  346  cd api
+  347  ls
+  348  touch urls.py
+  349  nano urls.py 
+  350  service apache2 restart
+  351  ls -al
+  352  nano urls.py 
+  353  service apache2 restart
+  354  nano urls.py 
+  355  service apache2 restart
+  356  cd ..
+  357  ls
+  358  cd api/
+  359  ls
+  360  nano urls.py 
+  361  service apache2 restart
+  362  nano urls.py 
+  363  service apache2 restart
+  364  ls
+  365  nano views.py 
+  366  service apache2 restart
+  367  clear
+  368  history
+  369  cat /var/log/apache2/error.log
+  370  ls
+  371  nano urls.py 
+  372  service apache2 restart
+  373  cat /var/log/apache2/error.log
+  374  nano views.py 
+  375  service apache2 restart
+  376  cat /var/log/apache2/error.log
+  377  nano views.py 
+  378  cat /var/log/apache2/error.log
+  379  service apache2 restart
+  380  cat /var/log/apache2/error.log
+  381  nano views.py 
+  382  service apache2 restart
+  383  cat /var/log/apache2/error.log
+  384  nano views.py 
+  385  service apache2 restart
+  386  nano views.py 
+  387  service apache2 restart
+  388  nano views.py 
+  389  service apache2 restart
+  390  cat /var/log/apache2/error.log
+  391  nano views.py 
+  392  clear
+  393  ls -al
+  394  cd ..
+  395  ls -al
+  396  git add .
+  397  git commit -m "API REST"
+  398  git config --global user.email "you@example.com"
+  399  git config --global user.email "kd.bellachheb@gmail.com"
+  400  git config --global user.name "BellachhebKhalid"
+  401  git commit -m "API REST"
+  402  git push origin master
+  403  cd ..
+  404  ls -al
+  405  cd src/
+  406  ls -al
+  407  history > cmd.txt
