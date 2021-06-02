@@ -111,7 +111,7 @@ class FoliumVListView(ListView):
         folium.raster_layers.TileLayer('OpenStreetMap').add_to(m)
         folium.raster_layers.TileLayer('CartoDB positron').add_to(m)
         folium.raster_layers.TileLayer('Stamen Toner').add_to(m)
-        folium.raster_layers.TileLayer('Mapbox Bright').add_to(m)
+        #folium.raster_layers.TileLayer('Mapbox Bright').add_to(m)
         folium.raster_layers.TileLayer('Stamen Watercolor').add_to(m)
         folium.LayerControl().add_to(m)
         # Ajouter Geocoder

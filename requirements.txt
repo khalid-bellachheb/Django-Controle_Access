@@ -24,7 +24,6 @@ mccabe==0.6.1
 paho-mqtt==1.5.1
 protobuf==3.13.0
 pylint==2.6.0
-PyOpenGL @ file:///C:/Users/Khalid/Downloads/PyOpenGL-3.1.5-py3-none-any.whl
 PyOpenGL-accelerate==3.1.5
 pytz==2020.1
 six==1.15.0
