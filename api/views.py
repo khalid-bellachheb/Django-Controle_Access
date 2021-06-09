@@ -15,7 +15,7 @@ def save_data(request):
         
     return HttpResponse("ok")
 
-
+@csrf_exempt 
 def save_maricule_data(request):
     if request.method=='POST':
         data = json.loads(request.body.decode('utf-8'))
