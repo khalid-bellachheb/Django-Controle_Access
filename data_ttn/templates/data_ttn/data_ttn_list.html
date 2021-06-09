@@ -8,61 +8,76 @@
                             <div class="col-md-10 pb-30 header-text text-left">
                                 <h1 class="mb-2">Données d’identification des utilisateurs</h1>
                                 </br>
-                                <div class="container">
-                                    <h2>Visiteurs</h2>         
-                                    </br>
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th>Badge</th>
-                                            <th>Autorisation</th>
-                                            <th>Porte</th>
-                                            <th>Zone</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for data_ttn in object_list  %}
-                                                {% if data_ttn.Autorisation != "Accés autorisé" %}
-                                                    <tr>
-                                                        <td>{{data_ttn.badge}}</td>
-                                                        <td>{{data_ttn.Autorisation}}</td>
-                                                        <td>{{data_ttn.Porte}}</td>
-                                                        <td>{{data_ttn.Zone}}</td>
-                                                    </tr>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-visiteurs" role="tab" aria-controls="nav-visiteurs" aria-selected="true">Visiteurs</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-employes" role="tab" aria-controls="nav-employes" aria-selected="false">Employés</a>
                                     </div>
-                                </br>
-                                <div class="container">
-                                    <h2>Employés</h2>         
-                                    </br>
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th>Badge</th>
-                                            <th>Autorisation</th>
-                                            <th>Porte</th>
-                                            <th>Zone</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                            {% for data_ttn in object_list  %}
-                                                {% if data_ttn.Autorisation == "Accés autorisé" %}
-                                                    <tr>
-                                                        <td>{{data_ttn.badge}}</td>
-                                                        <td>{{data_ttn.Autorisation}}</td>
-                                                        <td>{{data_ttn.Porte}}</td>
-                                                        <td>{{data_ttn.Zone}}</td>
-                                                    </tr>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </tbody>
-                                    </table>
+                                </nav>
+
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-visiteurs" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <div class="container">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>Badge</th>
+                                                    <th>Autorisation</th>
+                                                    <th>Porte</th>
+                                                    <th>Zone</th>
+                                                    <th>Matricule</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {% for data_ttn in object_list  %}
+                                                        {% if data_ttn.status != "Visiteur" %}
+                                                            <tr>
+                                                                <td>{{data_ttn.badge}}</td>
+                                                                <td>{{data_ttn.Autorisation}}</td>
+                                                                <td>{{data_ttn.Porte}}</td>
+                                                                <td>{{data_ttn.Zone}}</td>
+                                                                <td>{{data_ttn.matricule_id}}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                            </div>
-                        </div>
+                                    <div class="tab-pane fade" id="nav-employes" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="container">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>Badge</th>
+                                                    <th>Autorisation</th>
+                                                    <th>Porte</th>
+                                                    <th>Zone</th>
+                                                    <th>Matricule</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {% for data_ttn in object_list  %}
+                                                        {% if data_ttn.status == "Employé(e)" %}
+                                                            <tr>
+                                                                <td>{{data_ttn.badge}}</td>
+                                                                <td>{{data_ttn.Autorisation}}</td>
+                                                                <td>{{data_ttn.Porte}}</td>
+                                                                <td>{{data_ttn.Zone}}</td>
+                                                                <td>{{data_ttn.matricule_id}}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                    </div>
+                </section>
                         						
             <!--
             {% for object in object_list %}

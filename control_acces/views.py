@@ -128,14 +128,14 @@ class FoliumVListView(ListView):
         #port = data_ttn.get_deferred_fields(self)
         #print(port)
         # ///////////// Port A /////////////
-        html=f'<p>Device Id : {port_a.device_id}</p><p>Badge : {port_a.badge}</p><p>Port : {port_a.Porte}</p><p>{port_a.Autorisation}</p><p>{port_a.Zone}</p>'
+        html=f'<p>Device Id : {port_a.device_id}</p><p>Port : {port_a.Porte}</p><p>{port_a.Zone}</p> <form action="accueil/" method="GET"> <button type="submit"> Get acces </button> </form>'
         iframe = folium.IFrame(html=html, width=160, height=180)
         popup = folium.Popup(iframe, max_width=2650)
         folium.vector_layers.Circle(location=[5.2230,-52.7779],radius=30, tooltip='A',color='#ff3333').add_to(m)
         folium.Marker([5.2230,-52.7779], popup=popup,#f'<p>Device Id : {port_a.device_id}</p><p>Badge : {port_a.badge}</p><p>Port : {port_a.Porte}</p>',
             tooltip='A',
             icon=folium.Icon(color="green",icon="check", prefix='fa'),
-             html='<div style="font-size: 12pt">%s</div>' % 'text'
+             html='<div style="font-size: 24pt">%s</div>' % 'text'
             ).add_to(m)
 
         # ///////////// Port C /////////////

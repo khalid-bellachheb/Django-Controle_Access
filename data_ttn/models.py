@@ -20,9 +20,17 @@ Zone_TYPE=(
     ('Zone 2','Zone 2'),
     ('Zone 3','Zone 3'),
 )
+STATUS_TYPE =(
+    ('Employé(e)','Employé(e)'),
+    ('Visiteur','Visiteur'),
+
+)
+
 class data_ttn(models.Model):
     device_id=models.CharField(max_length=15)
     badge=models.CharField(max_length=15)
+    status=models.CharField(max_length=50,choices=STATUS_TYPE)
+    matricule_id=models.CharField(max_length=15)
     Autorisation=models.CharField(max_length=50,choices=AUTORISATION_TYPE)
     Porte=models.CharField(max_length=2,choices=Porte_TYPE)
     Zone=models.CharField(max_length=10,choices=Zone_TYPE)

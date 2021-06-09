@@ -26,7 +26,7 @@ SECRET_KEY = 'cv0i7)ct_b(dp^+i!-kq=g-+^&9vs3%z6cxo^hzkzettx-y!k)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pre0.enib.fr']
+ALLOWED_HOSTS = ['pre0.enib.fr','127.0.0.1', 'localhost']
 
 
 # Application definition
