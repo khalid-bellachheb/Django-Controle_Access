@@ -42,7 +42,6 @@ def TTN_API():
 
 
 def my_view(request):
-        print(TTN_API())
         print("my redirect view")
         return redirect("control_acces")
 

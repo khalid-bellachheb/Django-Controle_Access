@@ -37,7 +37,7 @@ def save_maricule_data(request):
 
 # api/facialRecognition
 @csrf_exempt 
-def save_maricule_data(request):
+def save_faceRecognition_data(request):
     if request.method=='POST':
         print("face Recognition id was send")
         data = json.loads(request.body.decode('utf-8'))

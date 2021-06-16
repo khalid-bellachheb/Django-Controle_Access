@@ -21,6 +21,7 @@
                                             <table class="table table-striped">
                                                 <thead>
                                                 <tr>
+                                                    <th>Nom</th>
                                                     <th>Badge</th>
                                                     <th>Autorisation</th>
                                                     <th>Porte</th>
@@ -32,6 +33,7 @@
                                                     {% for data_ttn in object_list  %}
                                                         {% if data_ttn.status == "Visiteur" %}
                                                             <tr>
+                                                                <td>{{data_ttn.Nom}}</td>
                                                                 <td>{{data_ttn.badge}}</td>
                                                                 <td>{{data_ttn.Autorisation}}</td>
                                                                 <td>{{data_ttn.Porte}}</td>
@@ -49,6 +51,7 @@
                                             <table class="table table-striped">
                                                 <thead>
                                                 <tr>
+                                                    <th>Nom</th>
                                                     <th>Badge</th>
                                                     <th>Autorisation</th>
                                                     <th>Porte</th>
@@ -60,6 +63,7 @@
                                                     {% for data_ttn in object_list  %}
                                                         {% if data_ttn.status == "Employé(e)" %}
                                                             <tr>
+                                                                <td>{{data_ttn.Nom}}</td>
                                                                 <td>{{data_ttn.badge}}</td>
                                                                 <td>{{data_ttn.Autorisation}}</td>
                                                                 <td>{{data_ttn.Porte}}</td>

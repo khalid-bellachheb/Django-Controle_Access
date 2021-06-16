@@ -28,6 +28,7 @@ STATUS_TYPE =(
 
 class data_ttn(models.Model):
     device_id=models.CharField(max_length=15)
+    Nom=models.CharField(max_length=15)
     badge=models.CharField(max_length=15,primary_key=True)
     status=models.CharField(max_length=50,choices=STATUS_TYPE)
     matricule_id=models.CharField(max_length=15)
