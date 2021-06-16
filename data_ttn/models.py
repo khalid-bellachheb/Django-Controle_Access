@@ -28,7 +28,7 @@ STATUS_TYPE =(
 
 class data_ttn(models.Model):
     device_id=models.CharField(max_length=15)
-    badge=models.CharField(max_length=15)
+    badge=models.CharField(max_length=15,primary_key=True)
     status=models.CharField(max_length=50,choices=STATUS_TYPE)
     matricule_id=models.CharField(max_length=15)
     Autorisation=models.CharField(max_length=50,choices=AUTORISATION_TYPE)
@@ -38,4 +38,4 @@ class data_ttn(models.Model):
 
 
     def __str__(self):
-        return  ("badge N : "+ str(self.id))
+        return  ("badge N : "+ str(self.badge))

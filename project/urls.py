@@ -24,7 +24,8 @@ urlpatterns = [
     path('accueil/', include('accueil.urls')),
     path('control-acces/', include('control_acces.urls')),
     path('ttn/', include('data_ttn.urls')),
-    path('api/',include('api.urls'))
+    path('api/',include('api.urls')),
+    path('send_data_ttn/',include('send_data_ttn.urls'))
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

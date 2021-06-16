@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+						
+			<!-- Start blog-posts Area -->
+			<!-- Start project Area -->
+            <section class="blog-posts-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-8 post-list blog-post-list">
+						
+							<div class="col">
+								<h3 class="mb-20">Envoi de données à TTN </h3>
+								<div >
+									<ul class="unordered-list">
+										<li class="mb-20" >Device Id : stm32-1</li>
+										<li class="mb-20" >Port : A</li>
+										<li class="mb-20" >Zone 2</li>
+										<li class="mb-20" >Ouvrir la porte</li>
+									</ul>
+								</div>
+							</div>
+							<h3 class="mb-20"></h3>
+							<div class="row">
+    							<div class="col-1">
+								</div>
+								<div class="col-2">
+								   <div class="switch-wrap d-flex justify-content-between">
+											<div class="primary-switch">
+												<input type="checkbox" id="default-switch">
+												<label for="default-switch"></label>
+											</div>
+								    </div>
+								</div>
+
+  							</div>
+								
+							<h3 class="mb-20"></h3>
+							<div id="outside">
+							<a id="Envoyer" class="genric-btn primary circle arrow">Envoyer<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+							<script type = "text/text/javascript">
+								// Function to change the content of t2
+								function modifyText() {
+								const t2 = document.getElementById("Envoyer");
+								debug.log('hello ajax');
+								}
+
+								// Add event listener to table
+								const el = document.getElementById("outside");
+								el.addEventListener("click", modifyText, false);
+							</script>
+
+						</div>
+                    </div>
+				</div>	
+				
+			</section>
+
+			
+
+			
+
+
+<!--			
+<div class = "wrapper" align = "center">
+  <div class="btn-group" id="toggle_event_editing">
+    <button type="button" class="btn btn-danger locked_active">OFF</button>
+    <button type="button" class="btn btn-success unlocked_inactive">ON</button>
+  </div> 
+  <div class="alert alert-danger" id="switch_status">Switched off.</div>
+</div>
+     -->                   			
+			<!-- End blog-posts Area -->		
+
+{% endblock body %}

@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'accueil',
     'control_acces',
     'data_ttn',
-    'api'
+    'api',
+    'send_data_ttn'
 ]
 
 

@@ -128,7 +128,7 @@ class FoliumVListView(ListView):
         #port = data_ttn.get_deferred_fields(self)
         #print(port)
         # ///////////// Port A /////////////
-        html=f'<p>Device Id : {port_a.device_id}</p><p>Port : {port_a.Porte}</p><p>{port_a.Zone}</p> <form action="accueil/" method="GET"> <button type="submit"> Get acces </button> </form>'
+        html=f'<p>Device Id : {port_a.device_id}</p><p>Port : {port_a.Porte}</p><p>{port_a.Zone}</p> <form action="accueil/" method="GET"><button type="submit" onclick="window.parent.location.href= \'http://127.0.0.1:8000/send_data_ttn/\';"> Get acces <script></script></button></form>'
         iframe = folium.IFrame(html=html, width=160, height=180)
         popup = folium.Popup(iframe, max_width=2650)
         folium.vector_layers.Circle(location=[5.2230,-52.7779],radius=30, tooltip='A',color='#ff3333').add_to(m)

@@ -30,7 +30,7 @@
                                                 </thead>
                                                 <tbody>
                                                     {% for data_ttn in object_list  %}
-                                                        {% if data_ttn.status != "Visiteur" %}
+                                                        {% if data_ttn.status == "Visiteur" %}
                                                             <tr>
                                                                 <td>{{data_ttn.badge}}</td>
                                                                 <td>{{data_ttn.Autorisation}}</td>
